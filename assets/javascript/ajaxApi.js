@@ -43,6 +43,7 @@ $("#buttonsGoHere").on("click", ".gifGenerators", function (event) {
                     var theImage = $("<img>");
                     var stillImage = results[i].images.fixed_height_still.url;
                     var animatedImage = results[i].images.fixed_height.url;
+                    displayRating.addClass("ratingStyle")
                     theImage.addClass("gif");
                     theImage.attr("data-still", stillImage);
                     theImage.attr("data-animate", animatedImage);
