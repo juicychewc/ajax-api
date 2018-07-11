@@ -24,7 +24,6 @@ $("#addButton").on("click", function (event) {
 
 //AJAX
 $("#buttonsGoHere").on("click", ".gifGenerators", function (event) {
-    event.preventDefault();
     var whoDis = $(this).attr("data-name");
     var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
         whoDis + "&api_key=Wf1Ekt7WqVYzgM6Cw1sJZ23lglDyXSMe&limit=10";
